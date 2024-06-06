@@ -24,6 +24,11 @@ body {
   background-repeat: no-repeat;
 }
 
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+}
+
 header {
   display: flex;
   align-items: center;
