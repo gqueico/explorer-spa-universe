@@ -24,9 +24,24 @@
       <div id="app"></div>
 
       <script>
+        const routes = {
+          "/": "/pages/home.html",
+          "/universe": "/pages/universe.html",
+          "/explorer": "/pages/explorer.html"
+        }
+
         function route(event) {
           event = event || window.event
           event.preventDefault()
+
+          window.history.pushState({}, "", event.target.href)
+
+          handle()
+        }
+
+        function handle() {
+          const { pathname } = window.location
+          console.log(pathname)
         }
       </script>
     </div>
