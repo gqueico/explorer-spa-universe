@@ -54,3 +54,9 @@ nav a {
   color: var(--color-link-active);
   font-weight: 700;
 }
+
+.title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--color-title);
+}
