@@ -55,8 +55,27 @@ nav a {
   font-weight: 700;
 }
 
+.home {
+  text-align: center;
+}
+
 .title {
+  margin-top: 17.2rem;
   font-size: 4.8rem;
   font-weight: 700;
   color: var(--color-title);
+}
+
+.more__btn {
+  display: inline-block;
+  margin-top: 2.4rem;
+  padding: 1.2rem 3.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  color: var(--color-link-active);
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid var(--color-link-active);
+  border-radius: .5rem;
 }
