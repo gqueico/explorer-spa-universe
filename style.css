@@ -55,7 +55,7 @@ nav a {
   font-weight: 700;
 }
 
-.home {
+#home {
   text-align: center;
 }
 
@@ -76,6 +76,13 @@ nav a {
   color: var(--color-link-active);
   text-transform: uppercase;
   text-decoration: none;
+  background-color: transparent;
   border: 2px solid var(--color-link-active);
   border-radius: .5rem;
+  transition: all 200ms ease-in-out;
+}
+
+.more__btn:hover {
+  color: var(--color-button-hover);
+  background-color: var(--color-link-active);
 }
