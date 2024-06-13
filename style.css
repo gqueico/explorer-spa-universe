@@ -55,15 +55,27 @@ nav a {
   font-weight: 700;
 }
 
+.title {
+  margin-top: 6.2rem;
+  margin-bottom: 1.6rem;
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--color-title);
+}
+
+.text {
+  max-width: 64.8rem;
+  font-size: 1.8rem;
+  line-height: 2.88rem;
+  color: var(--color-title);
+}
+
 #home {
   text-align: center;
 }
 
-.title {
+#home .title {
   margin-top: 17.2rem;
-  font-size: 4.8rem;
-  font-weight: 700;
-  color: var(--color-title);
 }
 
 .more__btn {
@@ -85,4 +97,9 @@ nav a {
 .more__btn:hover {
   color: var(--color-button-hover);
   background-color: var(--color-link-active);
+}
+
+#universe,
+#explorer {
+  margin-left: 10.2rem;
 }
