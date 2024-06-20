@@ -41,12 +41,22 @@
 
         function handle() {
           const { pathname } = window.location
-          const route = routes[pathname] || routes[404]
+          const route = routes[pathname]
 
-          fetch(route).then(data => data.text()).then(html => console.log(html))
-
-          console.log(route)
+          fetch(route).then(data => data.text()).then(html => {
+            document.querySelector('#app').innerHTML = html
+          })
         }
+
+        handle()
+
+        window.onpopstate = () => handle()
+
+        const toggleMenu = document.querySelectorAll('nav a')
+
+        toggleMenu.addEventListener('click', event => {
+          event.classList.toggle('.active')
+        })
       </script>
     </div>
   </body>
