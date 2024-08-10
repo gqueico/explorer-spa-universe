@@ -19,8 +19,8 @@
 body {
   height: 100vh;
   font: 400 1.6rem "Roboto", sans-serif;
-  background-image: url(./assets/img/mountains-universe-1.png);
-  background-size: cover;
+  background-position: top center;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
