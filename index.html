@@ -15,49 +15,15 @@
         <img src="./assets/img/logo.svg" alt="Logo SPA Universe">
   
         <nav>
-          <a href="/" onclick="route()" class="active">Home</a>
+          <a href="/" onclick="route()">Home</a>
           <a href="/universe" onclick="route()">O Universo</a>
           <a href="/explorer" onclick="route()">Exploração</a>
         </nav>
       </header>
   
       <div id="app"></div>
-
-      <script>
-        const routes = {
-          "/": "/pages/home.html",
-          "/universe": "/pages/universe.html",
-          "/explorer": "/pages/explorer.html"
-        }
-
-        function route(event) {
-          event = event || window.event
-          event.preventDefault()
-
-          window.history.pushState({}, "", event.target.href)
-
-          handle()
-        }
-
-        function handle() {
-          const { pathname } = window.location
-          const route = routes[pathname]
-
-          fetch(route).then(data => data.text()).then(html => {
-            document.querySelector('#app').innerHTML = html
-          })
-        }
-
-        handle()
-
-        window.onpopstate = () => handle()
-
-        const toggleMenu = document.querySelectorAll('nav a')
-
-        toggleMenu.addEventListener('click', event => {
-          event.classList.toggle('.active')
-        })
-      </script>
     </div>
+
+    <script src="./js/index.js" type="module"></script>
   </body>
 </html>
